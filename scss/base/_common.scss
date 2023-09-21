@@ -1,0 +1,163 @@
+section {
+	position: relative;
+	// overflow: hidden;
+}
+
+[class*="u-"] {
+	font-family: "Unbounded";
+}
+
+// Text ========================================================================================================================================================
+
+// Button ========================================================================================================================================================
+.rs-btn {
+	position: relative;
+	overflow: hidden;
+	-webkit-appearance: button;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	font-variant-numeric: lining-nums proportional-nums;
+	z-index: 10;
+}
+
+.form {
+	// .form__wrapper
+	&__wrapper {
+	}
+
+	// .form__block
+	&__block {
+	}
+
+	&__row {
+		@media (min-width: 991.98px) {
+			display: flex;
+			justify-content: space-between;
+
+			.form__line {
+				width: 48%;
+			}
+		}
+	}
+
+	// .form__line
+	&__line {
+		width: 100%;
+		position: relative;
+		margin-bottom: 16px;
+
+		&._form-error {
+		}
+
+		&._form-right {
+		}
+
+		&._form-valid {
+		}
+
+		&._form-focus {
+		}
+	}
+
+	&__error {
+		margin-top: 5px;
+		margin-left: 15px;
+		color: #ff0000;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%;
+		text-align: left;
+	}
+
+	// .form__footer
+	&__footer {
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	// .form__agreement
+	&__agreement {
+		color: rgba(255, 255, 255, 0.65);
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 15.6px */
+		margin-right: 24px;
+		max-width: 367px;
+
+		@media (max-width: 1439.98px) {
+			margin-right: 16px;
+		}
+
+		@media (max-width: 767.98px) {
+			margin-right: 0px;
+			max-width: 100%;
+			margin-bottom: 24px;
+		}
+
+		a {
+			text-decoration: underline;
+			text-underline-offset: 2px;
+			text-decoration-skip-ink: none;
+
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	// .form__button
+	&__button {
+		min-width: 135px;
+		max-width: 135px;
+
+		@media (max-width: 767.98px) {
+			min-width: 100%;
+			max-width: 100%;
+		}
+
+		.rs-btn {
+			width: 100%;
+		}
+	}
+}
+
+.rs-input {
+	outline: none;
+	width: 100%;
+	transition: 0.3s ease 0s;
+	transition-property: background-color, border-color;
+
+	&::placeholder {
+		color: #f3f4f6;
+	}
+
+	&._form-focus {
+	}
+
+	&._form-error {
+	}
+
+	&._form-right {
+	}
+}
+
+textarea.rs-input {
+	resize: vertical;
+	min-height: 129px;
+}
+
+// Block  ========================================================================================================================================================
