@@ -81,6 +81,10 @@
   opacity: 1;
   visibility: visible;
 }
+.menu-services-open .rs-header::after {
+  opacity: 1;
+  visibility: visible;
+}
 .rs-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,7 +528,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 63px;
-  border: 1px solid #3f3d3f;
+  border: 1px solid var(--primary-color);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }

@@ -3,11 +3,222 @@ section {
 	// overflow: hidden;
 }
 
-[class*="u-"] {
+[class*="ubd-"] {
 	font-family: "Unbounded";
 }
 
+[class*="mls-"] {
+	font-family: "Mulish";
+}
+
 // Text ========================================================================================================================================================
+.ubd-medium-47 {
+	font-size: 47px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	@media (max-width: 1439.98px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 34px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 27px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+}
+
+.ubd-regular-40 {
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 80%; /* 32px */
+
+	@media (max-width: 1439.98px) {
+		font-size: 35px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 30px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 25px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+}
+
+.ubd-medium-30 {
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 120%; /* 36px */
+	text-transform: lowercase;
+
+	@media (max-width: 1439.98px) {
+		font-size: 28px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 25px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 22px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+}
+
+.ubd-regular-47 {
+	font-size: 47px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 80%; /* 37.6px */
+	text-transform: lowercase;
+
+	@media (max-width: 1439.98px) {
+		font-size: 40px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 34px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 27px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+}
+
+.ubd-regular-32 {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 36px */
+
+	@media (max-width: 1439.98px) {
+		font-size: 28px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 25px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 22px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+}
+
+.ubd-regular-23 {
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 80%; /* 18.4px */
+
+	@media (max-width: 1439.98px) {
+		font-size: 21px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 13px;
+	}
+}
+
+.ubd-regular-22 {
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (max-width: 1439.98px) {
+		font-size: 21px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 13px;
+	}
+}
+
+.ubd-regular-14 {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
+}
+
+.mls-regular-16 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
+}
+
+.ubd-light-23 {
+	font-size: 23px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 161.5%; /* 37.145px */
+
+	@media (max-width: 1439.98px) {
+		font-size: 21px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 991.98px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 767.98px) {
+		font-size: 13px;
+	}
+}
 
 // Button ========================================================================================================================================================
 .rs-btn {
@@ -21,6 +232,98 @@ section {
 	transition: all 0.3s ease 0s;
 	font-variant-numeric: lining-nums proportional-nums;
 	z-index: 10;
+	width: auto;
+	perspective: 1500px;
+	perspective-origin: 50%;
+	transform-origin: 50%;
+
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.9px;
+	text-transform: lowercase;
+	padding: 16px 30px;
+	border-radius: 63px;
+	backdrop-filter: blur(2px);
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 1169.98px) {
+		font-size: 13px;
+	}
+
+	&._btn-primary {
+		color: #fff;
+		background-color: var(--primary-color);
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}
+	}
+
+	.double-text-wrapper {
+		position: relative;
+
+		perspective: 1500px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		position: relative;
+
+		span {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			transition: opacity 0.5s ease, transform 0.5s ease, transform-style;
+
+			&.double-text-origin {
+				position: absolute;
+				opacity: 0;
+				transform: translate3d(0px, -120%, 0px) scale3d(0.8, 0.8, 1) rotateX(50deg) rotateY(0deg) rotateZ(0deg)
+					skew(20deg, 0deg);
+				transform-style: preserve-3d;
+			}
+
+			&.double-text-copy {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+				position: static;
+				transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+					skew(0deg, 0deg);
+				transform-style: preserve-3d;
+				opacity: 1;
+			}
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				&.double-text-origin {
+					opacity: 1;
+					transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+						skew(0deg, 0deg);
+					transform-style: preserve-3d;
+				}
+				&.double-text-copy {
+					transform: translate3d(0px, 120%, 0px) scale3d(0.8, 0.8, 1) rotateX(60deg) rotateY(0deg)
+						rotateZ(0deg) skew(20deg, 0deg);
+					transform-style: preserve-3d;
+					opacity: 0;
+				}
+			}
+		}
+	}
 }
 
 .form {
@@ -161,3 +464,144 @@ textarea.rs-input {
 }
 
 // Block  ========================================================================================================================================================
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+
+	// .circle__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// .circle__text
+	&__text {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		span {
+			display: block;
+			position: absolute;
+			left: 50%;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+.top-btn {
+	position: fixed;
+	left: 80px;
+	right: auto;
+	top: auto;
+	bottom: 42px;
+	height: 207px;
+	width: 207px;
+	cursor: pointer;
+	z-index: 1000;
+	background-color: #fff;
+	padding: 10px;
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+
+	@media (max-width: 1439.98px) {
+		width: 150px;
+		height: 150px;
+		left: 40px;
+		bottom: 30px;
+	}
+
+	@media (max-width: 991.98px) {
+		width: 100px;
+		height: 100px;
+		left: 20px;
+		bottom: 20px;
+
+		display: none;
+	}
+
+	&._active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.circle {
+		// .circle__img
+		&__img {
+			&::before {
+				font-size: 78px;
+
+				@media (max-width: 1439.98px) {
+					font-size: 65px;
+				}
+
+				@media (max-width: 991.98px) {
+					font-size: 40px;
+				}
+			}
+		}
+
+		// .circle__text
+		&__text {
+		}
+	}
+}
+
+.section-title {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 35px;
+
+	@media (max-width: 1169.98px) {
+		margin-bottom: 25px;
+	}
+
+	@media (max-width: 991.98px) {
+		margin-bottom: 15px;
+	}
+
+	img {
+		min-width: 62px;
+		max-width: 62px;
+		height: 62px;
+		margin-right: 20px;
+
+		@media (max-width: 1439.98px) {
+			min-width: 50px;
+			max-width: 50px;
+			height: 50px;
+		}
+
+		@media (max-width: 1169.98px) {
+			margin-right: 15px;
+			min-width: 40px;
+			max-width: 40px;
+			height: 40px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-right: 10px;
+			min-width: 30px;
+			max-width: 30px;
+			height: 30px;
+		}
+	}
+
+	.ubd-regular-47 {
+		line-height: 80%; /* 37.6px */
+	}
+}

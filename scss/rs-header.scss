@@ -92,6 +92,13 @@
 		}
 	}
 
+	.menu-services-open & {
+		&::after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
 	// .rs-header__container
 	&__container {
 		display: flex;
@@ -528,7 +535,7 @@
 				align-items: center;
 				justify-content: center;
 				border-radius: 63px;
-				border: 1px solid #3f3d3f;
+				border: 1px solid var(--primary-color);
 				backdrop-filter: blur(2px);
 
 				&:not(:last-child) {
