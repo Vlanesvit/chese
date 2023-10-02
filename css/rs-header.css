@@ -149,7 +149,7 @@
     position: absolute;
     width: 100%;
     max-height: calc(100vh - 50px);
-    top: 100%;
+    top: calc(100% - 1px);
     -webkit-transform: translateX(-150%);
         -ms-transform: translateX(-150%);
             transform: translateX(-150%);

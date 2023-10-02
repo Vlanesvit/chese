@@ -102,6 +102,9 @@
             flex: 1 1 100%;
     overflow: hidden;
   }
+  .rs-numbers__item:first-child .rs-numbers__circle {
+    display: none;
+  }
 }
 .rs-numbers__item:first-child .rs-numbers__body p {
   margin-top: 5px;

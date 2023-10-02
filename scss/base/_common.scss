@@ -507,7 +507,7 @@ textarea.rs-input {
 	height: 207px;
 	width: 207px;
 	cursor: pointer;
-	z-index: 1000;
+	z-index: 100;
 	background-color: #fff;
 	padding: 10px;
 	z-index: 100;
@@ -528,9 +528,12 @@ textarea.rs-input {
 		width: 100px;
 		height: 100px;
 		left: 20px;
-		bottom: 20px;
+		bottom: 80px;
 
-		display: none;
+		.menu-services-open &,
+		.menu-open & {
+			z-index: 99;
+		}
 	}
 
 	&._active {

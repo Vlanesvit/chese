@@ -45,10 +45,27 @@ addLoadedClass()
 Кнопка Вверх
 ==================================== */
 function topScrollBtn() {
-	console.log('1');
 	const btn = document.querySelector('.top-btn')
+	const footer = document.querySelector('footer');
+
+	function checkOffset() {
+		function getRectTop(el) {
+			var rect = el.getBoundingClientRect();
+			return rect.top;
+		}
+
+		if ((getRectTop(btn) + document.body.scrollTop) + btn.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
+			btn.style.position = 'absolute';
+		if (document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+			btn.style.position = 'fixed'; // восстановить при прокрутке вверх
+	}
+
 	window.addEventListener('scroll', function () {
+		// Появление кнопки
 		btn.classList.toggle('_active', window.scrollY > 500);
+
+		// Стопим кнопку перед футером
+		checkOffset();
 	})
 }
 topScrollBtn()

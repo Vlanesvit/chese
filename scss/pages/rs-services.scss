@@ -215,11 +215,14 @@
 		padding: 39px;
 		bottom: 0;
 		left: 0;
-		opacity: 0;
-		visibility: hidden;
-		transform: translateX(100%);
 		transition: all 0.3s ease 0s;
 		color: #fff;
+
+		@media (min-width: 991.98px) {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(100%);
+		}
 
 		@media (max-width: 1439.98px) {
 			padding: 30px;

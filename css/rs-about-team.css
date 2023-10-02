@@ -24,6 +24,13 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 991.98px) {
+  .rs-about-team__container .swiper-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .rs-about-team__slider {
   overflow: visible;
 }
@@ -78,6 +85,12 @@
     height: 100%;
   }
 }
+@media (any-hover: hover) {
+  .rs-about-team__item:hover .rs-about-team__description {
+    max-height: 178.66px;
+    overflow-y: auto;
+  }
+}
 .rs-about-team__head {
   margin-bottom: 27px;
 }
@@ -128,16 +141,24 @@
 }
 .rs-about-team__description {
   margin-top: 28px;
-  max-height: 178.66px;
-  min-height: 61.444px;
-  overflow-y: auto;
+  min-height: 60px;
+  max-height: 60px;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding-right: 31px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 1439.98px) {
   .rs-about-team__description {
     margin-top: 15px;
     padding-right: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-about-team__description {
+    max-height: 178.66px;
+    overflow-y: auto;
   }
 }
 .rs-about-team__description p {

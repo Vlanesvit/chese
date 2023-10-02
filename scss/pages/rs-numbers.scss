@@ -75,6 +75,10 @@
 			@media (max-width: 991.98px) {
 				flex: 1 1 100%;
 				overflow: hidden;
+
+				.rs-numbers__circle {
+					display: none;
+				}
 			}
 
 			.rs-numbers__body {

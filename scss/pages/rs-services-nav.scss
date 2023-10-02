@@ -33,7 +33,7 @@
 
 			@media (max-width: 1439.98px) {
 				gap: 40px;
-				grid-template-columns: repeat(4, 1fr);
+				// grid-template-columns: repeat(4, 1fr);
 			}
 
 			@media (max-width: 1169.98px) {
@@ -50,10 +50,6 @@
 	&__sidebar {
 		@media (min-width: 991.98px) {
 			grid-column: 1/4;
-
-			@media (max-width: 1439.98px) {
-				grid-column: 1/2;
-			}
 		}
 
 		@media (max-width: 991.98px) {
@@ -63,10 +59,9 @@
 			position: fixed !important;
 			left: 20px !important;
 			top: 0px !important;
-			bottom: 0 !important;
 			right: 20px !important;
 			width: calc(100% - 40px) !important;
-			z-index: 100;
+			z-index: 99;
 
 			&._bottom-fixed {
 				.rs-services-nav__sidebar_wrapper {
@@ -80,6 +75,10 @@
 					bottom: auto !important;
 				}
 			}
+
+			.menu-services-open & {
+				z-index: 100;
+			}
 		}
 
 		// .rs-services-nav__sidebar_wrapper
@@ -91,7 +90,7 @@
 			transition: all 0.3s ease 0s;
 			left: 0 !important;
 
-			@media (max-width: 1169.98px) {
+			@media (max-width: 1439.98px) {
 				padding: 20px 15px 20px 20px;
 			}
 
@@ -162,14 +161,14 @@
 				& > li {
 					padding-left: 32px;
 
-					@media (max-width: 1169.98px) {
+					@media (max-width: 1439.98px) {
 						padding-left: 12px;
 					}
 
 					&:not(:last-child) {
 						margin-bottom: 26px;
 
-						@media (max-width: 1169.98px) {
+						@media (max-width: 1439.98px) {
 							margin-bottom: 10px;
 						}
 					}
@@ -183,7 +182,17 @@
 						letter-spacing: 0.9px;
 						text-transform: lowercase;
 
-						@media (max-width: 1169.98px) {
+						@media (max-width: 1439.98px) {
+							// Технически это одно и то же, но используйте и то, и другое
+							overflow-wrap: break-word;
+							word-wrap: break-word;
+							// Это самое опасное в WebKit, так как оно ломает вещи везде, где бы они ни были
+							word-break: break-all;
+							// Вместо этого используйте этот нестандартный:
+							word-break: break-word;
+							// Добавляет дефис там, где слово ломается, если поддерживается
+							hyphens: auto;
+
 							font-size: 13px;
 							letter-spacing: 0.65px;
 						}
@@ -198,7 +207,7 @@
 							background-color: #000;
 							border-radius: 50%;
 
-							@media (max-width: 1169.98px) {
+							@media (max-width: 1439.98px) {
 								top: 6px;
 								left: 0px;
 								width: 7px;
@@ -225,9 +234,10 @@
 						display: none;
 
 						li {
-							@media (max-width: 1169.98px) {
+							@media (max-width: 1439.98px) {
 								padding-left: 20px;
 							}
+
 							&:not(:last-child) {
 								margin-bottom: 7px;
 							}
@@ -241,7 +251,7 @@
 								letter-spacing: 0.8px;
 								text-transform: lowercase;
 
-								@media (max-width: 1169.98px) {
+								@media (max-width: 1439.98px) {
 									font-size: 13px;
 								}
 							}
@@ -262,7 +272,6 @@
 
 			@media (max-width: 1439.98px) {
 				padding-left: 0px;
-				grid-column: 2/5;
 			}
 		}
 	}
@@ -372,6 +381,10 @@
 
 		@media (max-width: 991.98px) {
 			margin-top: 30px;
+		}
+
+		h1 {
+			text-transform: unset;
 		}
 
 		// .rs-services-nav__price_list

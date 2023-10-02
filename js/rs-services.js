@@ -92,7 +92,7 @@ const servicesPlugin = (indexSlide = 0) => {
 		slides.forEach(slide => {
 			const videos = slide.querySelectorAll('.rs-services__bg video');
 			videos.forEach(video => {
-				// video.play();
+				video.play();
 			});
 		});
 	}
@@ -100,19 +100,24 @@ const servicesPlugin = (indexSlide = 0) => {
 		onVideoMobBrauser()
 	}
 
-	for (const slide of slides) {
+	slides.forEach(slide => {
+		const video = slide.querySelector('video');
+		console.log(video);
 		slide.addEventListener('mouseenter', () => {
-			clearActiveClasses();
-			slide.classList.toggle('_active');
-			slide.querySelector('.rs-services__bg video').play()
-		});
-	}
+			slides.forEach(slideActive => {
+				slideActive.classList.remove('_active');
+				if (video) {
+					video.pause()
+				}
+			});
 
-	const clearActiveClasses = () => {
-		slides.forEach((slide) => {
-			slide.classList.remove('_active');
-			// slide.querySelector('.rs-services__bg video').pause();
+			slide.classList.add('_active');
+			if (video && slide.classList.contains('_active')) {
+				video.play()
+			} else {
+				video.pause()
+			}
 		});
-	};
+	});
 };
 servicesPlugin();

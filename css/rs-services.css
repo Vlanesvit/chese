@@ -228,14 +228,18 @@
   padding: 39px;
   bottom: 0;
   left: 0;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #fff;
+}
+@media (min-width: 991.98px) {
+  .rs-services__description {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 @media (max-width: 1439.98px) {
   .rs-services__description {

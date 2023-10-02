@@ -38,9 +38,9 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 1169.98px) {
+@media (max-width: 1169.98px), (max-height: 767.98px) {
   .rs-slider__social {
-    top: 30%;
+    top: 300px;
     left: 30px;
   }
 }
